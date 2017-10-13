@@ -1,0 +1,88 @@
+h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small, #team {
+  font-family: 'Raleway';
+}
+
+p, .lead {
+	font-family: 'Raleway';
+}
+
+h1 {
+  font-size: 5vh;
+  line-height: 5vh;
+  letter-spacing: -1px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+header {
+  background: url(../img/header-bg.png) no-repeat center center;
+  width: 100%;
+  padding: 8px 10px 60px 10px;
+  height: 100vh;
+  overflow: hidden;
+  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.row-header {
+  margin: 0 5% 0 5%;
+  border: 1px solid black;
+  width: 100hw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.logo img{
+  float: left;
+  width: 13hw;
+  height: 5vh;
+}
+
+.header-text {
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.nav-bar {
+  float: right;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.nav-bar-items {
+  display: inline-block
+}
+
+.nav-bar-items:hover > a > div {
+  width: 100px;
+  border: 3px solid #7f7f7f;
+}
+
+.nav-bar-items:hover > a > div > p  {
+  font-size: 17px;
+  color: #7f7f7f;
+  font-weight: 400;
+}
+
+
+
+.nav-bar-items-box {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ffffff;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 40px;
+  text-decoration: none;
+  
+}
