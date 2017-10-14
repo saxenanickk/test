@@ -27,8 +27,8 @@ header {
 }
 
 .row-header {
-  margin: 0 5% 0 5%;
-  border: 1px solid black;
+  margin: 1% 5% 0 5%;
+  border: 0px solid black;
   width: 100hw;
   display: flex;
   align-items: center;
@@ -44,7 +44,7 @@ header {
 
 .header-text {
   font-size: 17px;
-  color: #ffffff;
+  color: var(--color);
   font-weight: 400;
   text-decoration: none;
 }
@@ -54,35 +54,43 @@ header {
   list-style-type: none;
   display: inline-flex;
   justify-content: space-between;
-  width: 25%;
+  width: 40vh;
 }
 
 .nav-bar-items {
-  display: inline-block
+  margin: 0 auto;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
 }
-
-.nav-bar-items:hover > a > div {
-  width: 100px;
-  border: 3px solid #7f7f7f;
-}
-
-.nav-bar-items:hover > a > div > p  {
-  font-size: 17px;
-  color: #7f7f7f;
-  font-weight: 400;
-}
-
-
 
 .nav-bar-items-box {
   width: 40px;
   display: flex;
+  padding-top: 10px;
   justify-content: center;
   align-items: center;
-  border: 3px solid #ffffff;
+  border: 1.5px solid var(--color);
+  transition: 0.25s;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   height: 40px;
+}
+
+.raise {
+  --color: #ffffff;
+  --hover: #000000;
+}
+
+.raise:hover > p, .raise:focus > p {
+  font-size: 18px;
+  color: var(--hover);
   text-decoration: none;
-  
+}
+
+.raise:hover, .raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  border: 2px solid var(--hover);
+  transform: translateY(-0.40em);
 }
